@@ -4,12 +4,7 @@ import { Recipe } from "../../models/recipe";
 import { EditRecipePage } from "../edit-recipe/edit-recipe";
 import { ShoppingListService } from "../../services/shopping-list";
 import { RecipesService } from "../../services/recipes";
-/**
- * Generated class for the RecipePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({

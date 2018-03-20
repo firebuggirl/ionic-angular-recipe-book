@@ -1,3 +1,9 @@
+
+
+//import { ENV } from 'environments/environment';
+//import { ENV } from '@app/env';
+import { HttpClientModule } from '@angular/common/http'; //mandatory for Angular 6 +
+//import { HttpClient } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -13,6 +19,12 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { ShoppingListService } from "../services/shopping-list";
 import { RecipesService } from "../services/recipes";
 //import { EditRecipePageModule } from '../pages/edit-recipe/edit-recipe.module';
+import { SigninPage } from "../pages/signin/signin";
+import { SignupPage } from "../pages/signup/signup";
+import { AuthService } from "../services/auth";
+import { DatabaseOptionsPage } from "../pages/database-options/database-options";
+//import { SLOptionsPage } from '../pages/shopping-list/sl-options/sl-options';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -20,10 +32,17 @@ import { RecipesService } from "../services/recipes";
     RecipePage,
     RecipesPage,
     ShoppingListPage,
-    TabsPage
+    TabsPage,
+    SigninPage,
+    SignupPage,
+    //SLOptionsPage,
+    DatabaseOptionsPage
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -33,13 +52,18 @@ import { RecipesService } from "../services/recipes";
     RecipePage,
     RecipesPage,
     ShoppingListPage,
-    TabsPage
+    TabsPage,
+    SigninPage,
+    SignupPage,
+    //SLOptionsPage,
+    DatabaseOptionsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     ShoppingListService,
     RecipesService,
+    AuthService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
