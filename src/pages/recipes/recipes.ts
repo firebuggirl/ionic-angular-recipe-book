@@ -43,6 +43,7 @@ export class RecipesPage {
     this.navCtrl.push(EditRecipePage, {mode: 'New'});
   }
 
+  //load single recipe from RecipePage into this page
   onLoadRecipe(recipe: Recipe, index: number) {
     this.navCtrl.push(RecipePage, {recipe: recipe, index: index});
   }

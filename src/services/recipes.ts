@@ -2,7 +2,6 @@ import { Injectable } from "@angular/core";
 //import { Http, Response } from "@angular/http";
 //ximport { HttpClient, Response } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
-//import {  Response } from "@angular/http";
 import 'rxjs/Rx';
 
 import { Recipe } from "../models/recipe";

@@ -61,11 +61,11 @@ https://cordova.apache.org/docs/en/latest/guide/platforms/android/
 
    * To use simulator:
 
-    - ` ionic cordova platform add android `
+    - ` ionic cordova platform add android `//add platform
 
     - ` ionic cordova build android `
 
-    - ` ionic cordova emulate android `
+    - ` ionic cordova emulate android `//run from command line
 
   * Open existing android project in Android SDK Manager + load `android` folder in `platforms` directory
 
@@ -113,7 +113,7 @@ https://cordova.apache.org/docs/en/latest/guide/platforms/android/
         ionic emulate ios  or ionic emulate  android runs your app on an existing simulator or launches an simulator if none is present. For Android, this will only work if you created a virtual device using the Android Virtual Device Tool. Find more information about this here: https://developer.android.com/studio/run/managing-avds.html
 
 ### Rules options:
-
+    - use 1st option for now
       `  {
           "rules": {
             ".read": "auth != null",

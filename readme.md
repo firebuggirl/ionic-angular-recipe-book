@@ -203,6 +203,8 @@ https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps/l
 
 
 
+
+
 ### NOTE:  Angular 5 + and HTTP
 
   https://www.udemy.com/ionic-2-the-practical-guide-to-building-ios-android-apps/learn/v4/t/lecture/6882276?start=0
